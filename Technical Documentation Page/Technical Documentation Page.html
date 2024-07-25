@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical Documentation Page" />
+    <link rel="stylesheet" href="Technical Documentation Page.css">
+    <title>Technical Documentation Page</title>
+
+</head>
+<body>
+    <nav id="navbar"><header>HTML Tables Document</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        
+            <li><a class="nav-link" href="#Common_HTML_Table_tags">Common HTML Table tags</a></li>
+        
+            <li><a class="nav-link" href="#HTML_Table_Syntax">HTML Table Syntax</a></li>
+                        
+            <li><a class="nav-link" href="#Table_Heading">Table Heading</a></li>
+
+            <li><a class="nav-link" href="#Caption">Caption</a></li>
+            
+            <li><a class="nav-link" href="#Cellpadding_and_Cellspacing">Cellpadding and Cellspacing</a></li>
+            
+            <li><a class="nav-link" href="#Colspan_and_Rowspan">Colspan and Rowspan</a></li>
+
+            <li><a class="nav-link" href="#Table_Header,_Body_&_Footer">Table Header, Body & Footer</a></li>
+
+            <li><a class="nav-link" href="#Wrap_Up">Wrap Up</a></li>
+
+            <li><a class="nav-link" href="#Reference">Reference</a> </li>
+          </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+            <p>A table is a representation of data arranged in rows and columns.
+                 Really, it's more like a spreadsheet. In HTML, with the help of
+                  tables, you can arrange data like images, text, links and so on
+                   into rows and columns of cells.
+            </p>
+            <p>To create a table in HTML you will need to use tags.
+                 The most important one is the <code class="tag"> &lt;table&gt; </code>
+                  tag which isthe main container of the table. It shows wherethe table
+                   will begin and where it ends.</p>              
+        </section>
+        <section class="main-section" id="Common_HTML_Table_tags">
+        <header>Common HTML Table tags</header>
+           <p>Other tags include:</p>
+           <ul>
+                <li><code class="tag"> &lt;tr&gt; </code> ~ represents rows</li>
+                <li><code class="tag"> &lt;td&gt; </code> ~ used to create data cells</li>
+                <li><code class="tag"> &lt;th&gt; </code> ~ used to add table headings</li>
+                <li><code class="tag"> &lt;caption&gt; </code> ~ used to insert captions</li>
+                <li><code class="tag"> &lt;thead&gt; </code> ~ adds a separate header to the table</li>
+                <li><code class="tag"> &lt;tbody&gt; </code> ~ shows the main body of the table</li>
+                <li><code class="tag"> &lt;tfoot&gt; </code> ~ creates a separate footer for the table</li>
+           </ul>
+        </section>
+        <section class="main-section" id="HTML_Table_Syntax">
+          <header>HTML Table Syntax</header>
+            <pre>
+                <code class="sample_code">
+                    &lt;table&gt;
+                    &lt;caption&gt; Coding Resources &lt;/caption&gt
+                        &lt;tr&gt;
+                        &lt;th&gt;First Name &lt;/th&gt;
+                        &lt;th&gt; Last Name &lt;/th&gt;
+                        &lt;th&gt; Email Address &lt;/th&gt;
+                        &lt;/tr&gt;
+
+                        &lt;tr&gt;
+                          &lt;td&gt; Hillary &lt;/td&gt;
+                          &lt;td&gt; Nyakundi &lt;/td&gt;
+                          &lt;td&gt; tables@mail.com &lt;/td&gt;
+                        &lt;/tr&gt;
+
+                        &lt;tr&gt;
+                          &lt;td&gt; Lary &lt;/td&gt;
+                          &lt;td&gt; Mak &lt;/td&gt;
+                          &lt;td&gt; developer@mail.com &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <table class="sample_out_put">
+                <caption>Free Coding Resources</caption>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email Address</th>
+                </tr>
+                <tr>
+                 <td>Hillary</td>
+                 <td>Nyakundi</td>
+                 <td>tables@mail.com</td>
+                </tr>
+                <tr>
+                  <td>Lary</td>
+                  <td>Mak</td>
+                  <td>developer@mail.com</td>
+                </tr>
+              </table>
+        </section>
+        <section class="main-section" id="Table_Heading">
+          <header>Table Heading</header>
+            <p>The <code>&lt;th&gt;</code> is used to add headings to tables.
+                 In basic designs the table heading will always take the <b>top row</b>,
+                  meaning we will have the <code>&lt;th&gt;</code> declared in our
+                   first table row followed by the actual data in the table. 
+                   By default the text passed in the Heading is <b>centered and Bold</b>.</p>
+        </section>
+        <section class="main-section" id="Caption">
+          <header>Caption</header>
+            <p>The main use of adding a caption to table is to provide a description
+                 about the data represented in the table. The caption can either be 
+                 placed at the top of the table or the bottom and by default it will 
+                 always be <b>centered</b>.
+                    To insert a caption into a table, use the <code>&lt;caption&gt;</code> tag.</p>
+        </section>
+        <section class="main-section" id="Cellpadding_and_Cellspacing">
+          <header>Cellpadding and Cellspacing</header>
+            <p>There are two attributes called cellpadding and cellspacing which you
+                 will use to adjust the white space in your table cells.
+                  The cellspacing attribute defines space between table cells,
+                   while cellpadding represents the distance between cell borders and
+                    the content within a cell.</p>
+        </section>
+        <section class="main-section" id="Colspan_and_Rowspan">
+          <header>Colspan and Rowspan</header>
+            <p>You will use colspan attribute if you want to merge
+                 two or more columns into a single column.
+                  Similar way you will use rowspan if you want to merge
+                   two or more rows.</p>
+            <pre>
+                <code class="Colspan_&_Rowspan_code">
+                    &lt;table border = "1"&gt;
+                        &lt;tr&gt;
+                        &lt;th&gt; Column1 &lt;/th&gt;
+                        &lt;th&gt; Column2 &lt;/th&gt;
+                        &lt;th&gt; Column3 &lt;/th&gt;
+                        &lt;/tr&gt;
+
+                        &lt;tr&gt;
+                          &lt;td rowspan = "2"&gt; Row 1 Cell 1&lt;/td&gt;
+                          &lt;td&gt; Row 1 Cell 2 &lt;/td&gt;
+                          &lt;td&gt; Row 1 Cell 3 &lt;/td&gt;
+                        &lt;/tr&gt;
+
+                        &lt;tr&gt;
+                          &lt;td&gt; Row 2 Cell 2 &lt;/td&gt;
+                          &lt;td&gt; Row 2 Cell 3 &lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                        &lt;td colspan = "3"&gt; Row 3 Cell 1 &lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <h3>out put will looke like this:</h3>
+             <table class="Colspan_&_Rowspan_out_put" border = "1">
+                <tr>
+                   <th>Column 1</th>
+                   <th>Column 2</th>
+                   <th>Column 3</th>
+                </tr>
+                <tr>
+                   <td rowspan = "2">Row 1 Cell 1</td>
+                   <td>Row 1 Cell 2</td>
+                   <td>Row 1 Cell 3</td>
+                </tr>
+                <tr>
+                   <td>Row 2 Cell 2</td>
+                   <td>Row 2 Cell 3</td>
+                </tr>
+                <tr>
+                   <td colspan = "3">Row 3 Cell 1</td>
+                </tr>
+             </table>
+            <p class="note">When using the attributes colspan and rowspan,
+                 make sure to declare the values assigned correclty
+                  to avoid overlapping of cells.</p>
+        </section>
+        <section class="main-section" id="Table_Header,_Body_&_Footer">
+          <header>Table Header, Body & Footer</header>
+            <p>Just like how a website or any other document has three main sections
+                  - the header, body, and footer - so does a table.</p>
+            <pre>
+              <code class="Table_Header_Body_&_Footer_code">
+                  &lt;table border = "1"&gt;
+                    &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;th colspan="2"&gt; October &lt;/th&gt;
+                        &lt;th colspan="2"&gt; November &lt;/th&gt;
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt; Sales &lt;/td&gt;
+                        &lt;td&gt; Profit &lt;/td&gt;
+                        &lt;td&gt; Sales &lt;/td&gt;
+                        &lt;td&gt; Profit &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td&gt; $200,00 &lt;/td&gt;
+                        &lt;td&gt; $50,00  &lt;/td&gt;
+                        &lt;td&gt; $300,000&lt;/td&gt;
+                        &lt;td&gt; $70,000 &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;tfoot&gt;
+                      &lt;tr&gt;
+                      &lt;td colspan= "4"&gt; November was more produstive &lt;/td&gt;
+                    &lt;/tr&gt;
+                  &lt;/tfoot&gt;
+                  &lt;/table&gt;
+              </code>
+          </pre>
+          <table border="1" class="Table_Header_Body_&_Footer_out_put">
+            <thead>
+              <tr>
+                <th colspan="2">October</th>
+                <th colspan="2">November</th>
+              </tr>
+            </thead>
+          
+            <tbody>
+              <tr>
+                <td>Sales</td>
+                <td>Profit</td>
+                <td>Sales</td>
+                <td>Profit</td>
+              </tr>
+              <tr>
+                <td>$200,00</td>
+                <td>$50,00</td>
+                <td>$300,000</td>
+                <td>$70,000</td>
+              </tr>
+            </tbody>
+              
+            <tfoot>
+              <tr>
+                <th colspan= "4">November was more produstive</th>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+        <section class="main-section" id="Wrap_Up">
+          <header>Wrap Up</header>
+          <p>Tables are a great way to represent tabular data,
+             and you can create them using basic HTML elements like 
+             <code>&lt;table&gt;,&lt;tr&gt,&lt;td&gt</code>.</p>
+          <p>And you can also add some styling to make them look good and present
+             the data clearly with the help of a CSS file.</p>
+        </section>
+        <section class="main-section" id="Reference">
+          <header>Reference</header>
+          <p>All the documentation in this page is taken from  <a class="source" href="https://www.freecodecamp.org/news/html-tables-table-tutorial-with-css-example-code/">FCC</a>
+          .</p>
+        </section>
+    </main> 
+       
+</body>
+
+</html>

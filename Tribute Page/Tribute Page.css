@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.387);
+    padding: 10px;
+}
+#img-div {
+    background-color: rgba(255, 255, 255, 0.935);
+    padding: 10px;
+    margin: auto;
+}
+
+img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+figcaption {
+    font-size: 11px ;
+    font-weight: 900;
+    font-family: 'Courier New', monospace;
+}
+
+ul{ 
+    margin: 5px auto 10px auto;
+    max-width: 590px;
+    line-height: 25px;
+    text-align: left;
+}
+
+ul li{
+    margin-bottom: 10px;
+    font-size: larger;
+    line-height: 25px;
+}
+
+#tribute-info {
+    padding: 5px;
+    background-color: aliceblue;
+    max-width: 1860px;
+    margin: 10px;
+    
+}
+
+#tribute-link:hover {
+    color: rgb(7, 1, 72);
+}
+
+#tribute-link:visited{
+    color: rgb(86, 83, 51);
+}
