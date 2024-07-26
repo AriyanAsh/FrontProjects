@@ -1,0 +1,252 @@
+:root{
+    --primary-color1: #222831;
+    --secondary-color1: #F05454;
+    --primary-color2: #b13a52;
+     --secondary-color2: #30475E;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+  
+html {
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    scroll-behavior: smooth;
+}
+ 
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    font-weight: 900;
+    font-size: 20px;
+    background: var(--secondary-color1);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.6);
+    z-index: 10;
+  }
+
+
+
+nav > ul{ 
+    width: 60%;
+    padding-left: 10%;
+    padding-right: 2.5vw ;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+nav ul li:hover{
+    padding: 7px;
+    font-size: 22px;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--primary-color1);
+} 
+
+
+
+body{
+    display: block;
+    background-color: var(--secondary-color2);
+  }
+
+
+.welcome{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color2) ;
+    background-image: linear-gradient(62deg, #403a3d 0%, var(--primary-color1) 100%);
+
+}
+
+
+.welcome h1{
+    font-size: 3rem;
+}
+
+.welcome h2 {
+    font-size: 2rem;
+}
+
+hr{
+    border-color: var(--primary-color2);
+    border: 1px solid var(--primary-color2);
+}
+
+
+.project-header{
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  margin: 20px auto 15px;
+}
+
+.projects{
+  background-color: var(--secondary-color2);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  padding: 30px;
+}
+
+
+
+.project-image {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  box-sizing: 10%;
+  border-radius: 1%;
+}
+
+
+.project {
+    background: var(--primary-color1);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: var(--primary-color2);
+  }
+  
+.code {
+    color: var(--primary-color1);
+    transition: color 0.3s ease-out;
+    padding: 2%;
+    
+  }
+
+  .project-title {
+    font-size: 25px;
+    padding: 2rem 0.5rem;
+    text-align: center;
+  }
+
+  .project:hover .code {
+    color: var(--primary-color2);
+  }
+
+
+/* Contact section */
+  
+.contact{
+  width: 100%;
+  height: 90vh;
+  background-color: var(--secondary-color2);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  text-align: center;
+  padding: 5vh;
+
+}
+
+
+.link-header{
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 5%;
+}
+
+.links{
+  display: block;
+  margin: 20vh auto;
+  font-size:35px; 
+
+
+}
+.links li{
+  margin: 35px;
+  list-style: none;
+}
+
+
+.github{
+  color: white;
+  font-size: 30px;
+}
+
+p{
+  display: inline;
+  font-size:30px; 
+  font-weight: 500;   
+}
+
+.github:hover,
+.address:hover{
+  color: #b13a52;
+  font-size: 35px;
+  transition: font-size 0.3s ease-out
+}
+
+
+@media (max-width: 815px) {
+  .navbar{
+    width: 100%;
+  }
+  nav > ul {
+    width: 100%;
+  }
+  
+.link-header{
+  font-size: 30px;
+}
+
+.links{
+  font-size:25px; 
+
+
+}
+
+
+.github{
+  color: white;
+  font-size: 20px;
+}
+
+p{
+  display: inline;
+  font-size:20px; 
+  font-weight: 500;   
+}
+
+.github:hover,
+.address:hover{
+  color: #b13a52;
+  font-size: 25px;
+  transition: font-size 0.3s ease-out
+}
+}

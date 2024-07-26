@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="The last.css">
+    <title>My Projects</title>
+</head>
+
+    <header>
+        <nav class="navbar" id="navbar">
+            <Ul class="nav-list">
+                <li>
+                    <a href="#welcome-section">Welcome </a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact </a>
+                </li>
+            </Ul>
+        </nav>
+    </header>
+    <hr>
+        <section class="welcome" id="welcome-section">
+            <h1>
+                Hi Im Ariyan
+            </h1>
+            <h2>
+                a web developer ;)
+            </h2>
+        </section>
+        <hr>
+        <section class="projects" id="projects">
+            <h2 class="project-header">
+                Here's some of my projects
+            </h2>
+            <div class="projects-grid">
+                <a
+                    href="https://github.com/AriyanAsh/FrontProjects/tree/main/Accessibility%20Quiz"
+                    target="_blank"
+                    class="project project-tile"
+                    id = "profile-link"
+                  >
+                    <img
+                      class="project-image"
+                      
+                      src="/projects photo/Accessibility Quiz.png"
+                      alt="project"
+                    />
+                    <p class="project-title">
+                      <span class="code">&lt;</span>
+                      Accessibility Quiz
+                      <span class="code">&#47;&gt;</span>
+                    </p> 
+                </a>
+                
+                <a
+                    href="https://github.com/AriyanAsh/FrontProjects/tree/main/magazine%20grid"
+                    target="_blank"
+                    class="project project-tile"
+                    id = "profile-link"
+                  >
+                    <img
+                      class="project-image"
+                      src="/projects photo/Magazine.png"
+                      alt="project"
+                    />
+                    <p class="project-title">
+                      <span class="code">&lt;</span>
+                      Magazine grid
+                      <span class="code">&#47;&gt;</span>
+                    </p> 
+                </a>
+                <a
+                    href="https://github.com/AriyanAsh/FrontProjects/tree/main/Coffee%20menu%20FCC"
+                    target="_blank"
+                    class="project project-tile"
+                    id = "profile-link"
+                  >
+                    <img
+                      class="project-image"
+                      alt="project"
+                      src="/projects photo/Cafe Menu.png"
+                    />
+                    <p class="project-title">
+                      <span class="code">&lt;</span>
+                      Coffee Menu
+                      <span class="code">&#47;&gt;</span>
+                    </p> 
+                </a>
+                <a
+                    href="https://github.com/AriyanAsh/FrontProjects/tree/main/RegistrationForm"
+                    target="_blank"
+                    class="project project-tile"
+                    id = "profile-link"
+                  >
+                    <img
+                      class="project-image"
+                      alt="project"
+                      src ="/projects photo/Registration Form.png"
+  
+                    />
+                    <p class="project-title">
+                      <span class="code">&lt;</span>
+                      Registration Form
+                      <span class="code">&#47;&gt;</span>
+                    </p> 
+                </a>
+                <a
+                    href="https://github.com/AriyanAsh/FrontProjects/tree/main/product%20landing%20page"
+                    target="_blank"
+                    class="project project-tile"
+                    id = "profile-link"
+                  >
+                    <img
+                      class="project-image"
+                      alt="project"
+                      src="projects photo/product landing page.png"
+                    />
+                    <p class="project-title">
+                      <span class="code">&lt;</span>
+                      Product landing page
+                      <span class="code">&#47;&gt;</span>
+                    </p> 
+                </a>
+                <a
+                    href="https://github.com/AriyanAsh/FrontProjects/tree/main/happyAniversary"
+                    target="_blank"
+                    class="project project-tile"
+                    id = "profile-link"
+                  >
+                    <img
+                      class="project-image"
+                      alt="project"
+                      src="/projects photo/Happy Anniversary Card.png"
+                    />
+                    <p class="project-title">
+                      <span class="code">&lt;</span>
+                      happyAniversary
+                      <span class="code">&#47;&gt;</span>
+                    </p> 
+                </a>
+            </div>
+        </section>
+        <hr>
+        <section class="contact" id="contact">
+            <h2 class="link-header">
+                I be glad if you want to work with me
+            </h2>
+            <div>
+                <ul class="links">
+                    <li>Email : <p class="address" onclick="copy(this)"> aryan.ashtari.1383@gmail.com</p></li>
+                    <li>Call : <p class="address"onclick="copy(this)"> +989184194647</p></li>
+                    <li><a class="github" href="https://github.com/AriyanAsh">GitHub</a></li>
+                </ul>
+            </div>
+        </section>
+        <script>
+            function copy(that){
+            var inp =document.createElement('input');
+            document.body.appendChild(inp)
+            inp.value =that.textContent
+            inp.select();
+            document.execCommand('copy',false);
+            inp.remove();
+            alert("Text copied!");}
+        </script>
+</body>
+</html>
