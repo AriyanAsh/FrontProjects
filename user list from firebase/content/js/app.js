@@ -6,7 +6,7 @@ const firstname = document.querySelector(".firstname")
 const lastname = document.querySelector(".lastname")
 const password = document.querySelector(".password")
 
-window.addEventListener('load', getAllUsers())
+window.addEventListener('load', getAllUsers)
 
 function getAllUsers (){
     usersContainer.innerHTML = ""
